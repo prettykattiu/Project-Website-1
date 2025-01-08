@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <title>Culinary Savor</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+    <div class="container">
+        <div id="loginBox" class="form-box">
+            <div class="icons">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <h2>Login</h2>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter Password" required>
+            </div>
+            <button class="btn" onclick="login()">Log In</button>
+            <h3><a href="#" onclick="showRegister()">Create new account</a></h3>
+        </div>
+
+        <div id="registerBox" class="form-box hidden">
+            <h2>Create new account</h2>
+            <div class="input-group">
+                <label for="registerUsername">Username</label>
+                <input type="text" id="registerUsername" placeholder="Enter Username" required>
+            </div>
+            <div class="input-group">
+                <label for="firstname">Firstname</label>
+                <input type="text" id="firstname" placeholder="Enter Firstname" required>
+            </div>
+            <div class="input-group">
+                <label for="lastname">Lastname</label>
+                <input type="text" id="lastname" placeholder="Enter Lastname" required>
+            </div>
+            <div class="input-group">
+                <label for="newPassword">Password</label>
+                <input type="password" id="newPassword" placeholder="Enter Password" required>
+            </div>
+            <div class="input-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" placeholder="Enter Password" required>
+            </div>
+            <button class="btn" id="registerButton" onclick="register()">Confirm</button>
+            <h3><a href="#" onclick="showLogin()">Back to Login</a></h3>
+        </div>
+
+        <div class="info-box">
+            <h1>Culinary<br>Savor</h1>
+
+        </div>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+</html>

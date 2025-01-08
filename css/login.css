@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Sonsie+One&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sonsie+One&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('../image/i.jpeg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Source Sans 3", sans-serif;
+    position: relative;
+    z-index: 0;
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3); 
+    z-index: -1;
+}
+
+
+.container {
+    display: flex;
+    border-radius: 20px;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+.form-box {
+    padding: 40px;
+    width: 400px;
+    background-color:transparent;
+    backdrop-filter: blur(2px); 
+    box-shadow: 0 4px 10px rgba(0, 0.1, 0.1,0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-family: "Source Sans 3", sans-serif;
+   
+}
+
+.form-box.hidden {
+    display: none;
+}
+
+h2 {
+    text-align: center;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+h3 {
+    margin-bottom: 20px;
+    color: #000;
+    text-align: center;
+    margin-top: 10px;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+h3 a {
+    color: #fff;
+}
+
+h3 a:hover {
+    color: #e06642;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    width: 300px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #000;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.btn {
+    background-color: #fff;
+    color: #3B3030;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 300px;
+}
+
+.btn:hover {
+    background-color: #fff;
+}
+
+.sizings {
+    color: #ddd;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+.info-box {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+   
+}
+
+.info-box h1 {
+    font-size: 70px;
+    color: #FDF2EC;
+    text-align: center;
+    text-shadow: 2px 2px #000;
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.2;
+}
+
+.icons {
+    color: #d57147;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .form-box, .info-box {
+      width: 90%;
+      margin: 10px 0;
+  }
+
+  .logo {
+      width: 60px;
+      height: 60px;
+  }
+
+  h1 {
+      font-size: 1.5rem;
+  }
+
+  p {
+      font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-box {
+      padding: 20px;
+  }
+
+  .btn {
+      padding: 8px;
+  }
+
+  .input-group label {
+      font-size: 12px;
+  }
+
+  .input-group input {
+      padding: 8px;
+  }
+
+  p {
+      font-size: 0.8rem;
+  }
+}
